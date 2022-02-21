@@ -1,0 +1,21 @@
+img{
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin: auto;
+    float: none;
+}
+p{
+    text-align: center;
+    font-size: 100%;
+}
+#error{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+a{
+    display: block;
+    text-align: center;
+    font-size: larger;
+}

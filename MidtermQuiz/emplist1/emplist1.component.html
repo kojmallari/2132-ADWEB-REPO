@@ -1,0 +1,20 @@
+<div class=""container>
+    <table class="table table-striped table-bordered" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let emp of mylist">
+                <td>{{ emp.id }}</td>
+                <td>{{ emp.firstname }}</td>
+                <td>{{ emp.lastname }}</td>
+                <td>{{ emp.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

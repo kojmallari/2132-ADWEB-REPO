@@ -1,3 +1,36 @@
-<h2>Event Binding with Angular</h2>
-<button (click) = "showData($event)">CLICK HERE!</button>
+<div>
+    <h3>Date Pipe</h3><br>
+    Today is a short date: {{ presentDate | date:'shortDate' }}<br>
+    This line shows a full date: {{ presentDate | date:'fullDate' }}<br>
+    This will show a formatted date: {{ presentDate | date:'M/dd/yyyy' }}<br>
+    This indicates the hours and minutes: {{ presentDate | date:'h:mm' }}<br>
+    <p>Name: Mallari, Joko Kenjie (WD301)</p>
+</div>
+<br>
+<div>
+    Date with Uppercase: {{ presentDate | date:'fullDate' | uppercase }}<br>
+    Date with Lowercase: {{ presentDate | date:'medium' | lowercase }}<br>
+</div>
 
+
+<div>
+    <h3>Currency Pipe</h3><br>
+    The price is: {{ price | currency: '' : true}}<br>
+    In USD: {{ price | currency: 'USD'}}
+</div>
+
+
+<div>
+    <h3>Slice Pipe</h3><br>
+    Start Index: {{ Fruits | slice: 2 }}<br>
+    Start and End Index: {{ Fruits | slice: 1 : 4}}<br>
+    Negative Index: {{ Fruits | slice: -2}}<br>
+    Negative and End Index: {{ Fruits | slice: -4 : -2}}<br>
+</div>
+<div>
+    <h3>Decimal Pipe</h3>
+    Apply formatting: {{ decimalNum1 | number: '3.1'}}<br>
+    Apply formatting: {{ decimalNum2 | number: '3.1-4'}}<br>
+    Apply formatting: {{ decimalNum1 | number}}<br>
+    Apply formatting: {{ decimalNum2 | number}}<br>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable, Observer } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'reactivedemo';
+  title = 'pipe-demo';
+  numbers$: any;
+
+  time = new Observable<string>((observer: Observer<string>) => {
+    setInterval(() => observer.next(new Date().toString()), 1000)
+
+    //number$.subscribe(observer);
+  });
+
+  
+
 }
